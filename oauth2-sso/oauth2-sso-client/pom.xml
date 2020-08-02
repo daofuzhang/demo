@@ -12,6 +12,7 @@
 	<modules>
 		<module>sso-client01</module>
 		<module>sso-client02</module>
+		<module>sso-client03</module>
 	</modules>
 
 	<dependencies>
@@ -23,7 +24,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-oauth2</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>
