@@ -79,5 +79,18 @@ insert into oauth_client_details (
   additional_information ,
   autoapprove 
 )
-VALUES ('client3', NULL, '$2a$10$C4caa8elJXXOIMhqIDGGrOV2b5NPmjeXsEy4836QqIFUGgG/HHLn6', 'all', 'password,authorization_code,refresh_token,implicit,client_credentials', NULL, NULL, NULL, NULL, NULL, 'true');
-values ('client1',null,'123456','all','password,authorization_code,refresh_token','http://localhost:9000/login',null,null,null,null,true);
+VALUES ('client1', NULL, '$2a$10$C4caa8elJXXOIMhqIDGGrOV2b5NPmjeXsEy4836QqIFUGgG/HHLn6', 'all', 'password,authorization_code,refresh_token,implicit,client_credentials', 'http://localhost:8080/login', NULL, NULL, NULL, NULL, 'true');
+insert into oauth_client_details (
+  client_id ,
+  resource_ids,
+  client_secret,
+  scope,
+  authorized_grant_types ,
+  web_server_redirect_uri,
+  authorities ,
+  access_token_validity ,
+  refresh_token_validity ,
+  additional_information ,
+  autoapprove 
+)
+VALUES ('client2', NULL, '$2a$10$C4caa8elJXXOIMhqIDGGrOV2b5NPmjeXsEy4836QqIFUGgG/HHLn6', 'all', 'password,authorization_code,refresh_token,implicit,client_credentials', 'http://localhost:8081/login', NULL, NULL, NULL, NULL, 'true');

@@ -43,6 +43,7 @@ public class MallSpringSecurityWebSecurityConfigurer extends WebSecurityConfigur
 		         // 由于使用的是JWT，我们这里不需要csrf
 		         .and().csrf().disable(); 
 		         */
+        /*
         http
         .antMatcher("/**")
         .authorizeRequests()
@@ -58,6 +59,17 @@ public class MallSpringSecurityWebSecurityConfigurer extends WebSecurityConfigur
         .and()
         .csrf().requireCsrfProtectionMatcher(new AntPathRequestMatcher("/oauth/authorize")).disable()
         .sessionManagement().maximumSessions(1);//  最大会话数设置
+        
+    */
+		
+		http.requestMatchers()
+		    .antMatchers("/login")
+		    .antMatchers("/oauth/authorize", "/oauth/**","/user")
+		    .and().authorizeRequests().anyRequest().authenticated()
+		    .and().httpBasic().and().formLogin().loginPage("/login").defaultSuccessUrl("/index").permitAll() // 自定义登录页面，这里配置了 loginPage, 就会通过 LoginController 的 login 接口加载登录页面
+		    .and().csrf().disable();
+		    
+		
 	}
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
