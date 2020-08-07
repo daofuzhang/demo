@@ -1,0 +1,6 @@
+com\zdf\demo\web\TestController.class
+com\zdf\demo\config\BaseConfig.class
+com\zdf\demo\oauth\MallResourceServerConfigurer.class
+com\zdf\demo\oauth\SecurityConfig.class
+META-INF\spring-configuration-metadata.json
+com\zdf\demo\MallApplication.class
