@@ -10,5 +10,6 @@
   	<module>demo-es</module>
   	<module>demo-job</module>
   	<module>demo-want</module>
+  	<module>demo-sharding-jdbc</module>
   </modules>
 </project>
