@@ -19,11 +19,11 @@ sharding:
       sharding:        default-database-strategy:          inline:            sharding-column: id
             algorithm-expression: db$->{id % 2}
         tables:          t_user:
-            actual-data-nodes: db$->{0..2}.t_user_$->{0..2} 
+            actual-data-nodes: RAWWANT.t_user_$->{0..2} 
             table-strategy:              inline:                sharding-column: id
                 algorithm-expression: t_user_$->{id % 2}
 #读写分离                 master-slave-rules:
           ds0: 
-             master-data-source-name: aaa
-             slave-data-source-names: bbb                        
+             master-data-source-name: db0
+             slave-data-source-names: db1                        
             

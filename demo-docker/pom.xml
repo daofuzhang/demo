@@ -7,4 +7,7 @@
   </parent>
   <artifactId>demo-docker</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>demo-docker-simple</module>
+  </modules>
 </project>
