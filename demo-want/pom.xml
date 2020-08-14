@@ -158,5 +158,7 @@
 	<modules>
 		<module>demo-web</module>
 		<module>demo-webservice</module>
+		<module>demo-etl</module>
+		<module>demo-jco-starter</module>
 	</modules>
 </project>

@@ -40,9 +40,13 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<!--新增的docker maven插件 -->
 				<groupId>com.spotify</groupId>
