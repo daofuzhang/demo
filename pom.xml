@@ -12,5 +12,6 @@
   	<module>demo-want</module>
   	<module>demo-sharding-jdbc</module>
   	<module>demo-springcloud</module>
+  	<module>demo-seata</module>
   </modules>
 </project>
