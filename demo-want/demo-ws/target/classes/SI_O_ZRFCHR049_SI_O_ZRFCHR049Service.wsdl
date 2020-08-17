@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://pi.want-want.com/ZRFCHR049" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="SI_O_ZRFCHR049" targetNamespace="http://pi.want-want.com/ZRFCHR049">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_SI_O_ZRFCHR049"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://pi.want-want.com/ZRFCHR049" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pi.want-want.com/ZRFCHR049">
+      <xsd:element name="MT_ZRFCHR049_REQ" type="DT_ZRFCHR049_REQ"/>
+      <xsd:element name="MT_ZRFCHR049_RES" type="DT_ZRFCHR049_RES"/>
+      <xsd:complexType name="DT_ZRFCHR049_REQ">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">e91f8597dd3811ea8f950000004d469e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0002">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">6a3d4110dc4611eaa1638cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">6a3d410bdc4611eaaffe8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="NACHN" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">6a3d410cdc4611eaa2bb8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VORNA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">6a3d410ddc4611ea9b688cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">6a3d410edc4611ea983e8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">6a3d410fdc4611ea9d6a8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0185">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a03adc4611eacb408cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a034dc4611ea8e898cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ICTYP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a035dc4611eaa4968cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ICNUM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a036dc4611eaa4268cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a038dc4611eaa0938cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a3b7a039dc4611eabb0d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0105">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94eedc4611ea8de08cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94e9dc4611eac6b78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USRTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94eadc4611eacedb8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USRID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94ebdc4611ea9a4c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94ecdc4611ea869d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">dc8d94eddc4611eac6f88cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0529">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">2b0227bfdc4711eac2c28cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">2b0227badc4711ea9cf78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RACKY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">2b0227bbdc4711ea99ae8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="PCODE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">2b0227bcdc4711eabbe18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">2b0227bddc4711eaa4ae8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">2b0227bedc4711eaa2b78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA9905">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">bc718034dc4811eacd358cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc71802cdc4811ea922d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRXM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc71802ddc4811eac5b78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRGX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc71802edc4811ea96e98cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRLXFS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc71802fdc4811eac7fe8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZAHTC" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc718030dc4811eaa3cb8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZHZLS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc718031dc4811eabfe48cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc718032dc4811eac8fb8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bc718033dc4811eac0cc8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0006">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e043dc4911eaca158cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2d233dc4911ea912f8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SUBTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2d234dc4911eabeb68cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LAND1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2d235dc4911ea95168cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="STATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2d236dc4911ea867b8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ORT01" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e03fdc4911eac2998cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LOCAT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e040dc4911eaa6758cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e041dc4911eab3028cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e042dc4911ea8bba8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0022">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">5ee34ae2dc4911ea937b8cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e044dc4911eacf7c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SLAND" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee2e045dc4911eac1198cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SLART" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e92dc4911eab4d48cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="INSTI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e93dc4911eaca0d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="AUSBI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e94dc4911ea9b288cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e95dc4911ea8f508cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e96dc4911eab1728cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e97dc4911eab3858cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">5ee31e98dc4911eaa0c18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0023">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a6be326ddc4911ea972d8cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be03eddc4911ea9b298cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ARBGB" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be03eedc4911ea9e468cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ANSVX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be03efdc4911ea92b88cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="TAETE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be03f0dc4911ea9dc18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be3267dc4911ea82628cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be3268dc4911ea8f128cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZPROFF1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be3269dc4911ea93e18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZPROFF2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be326adc4911ea8fe68cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be326bdc4911ea81698cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a6be326cdc4911eac2cf8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0024">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">bca49d56dc4911eab82f8cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d4fdc4911ea91e08cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="QUALI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d50dc4911eac1fc8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d51dc4911eac5898cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d52dc4911eac9a78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZISSUE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d53dc4911eaae6b8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d54dc4911eab2608cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">bca49d55dc4911eac1b78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0021">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">ddfaccb5dc4b11eab1348cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e905bdc8dd3811eab9248cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SUBTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e905cd40dd3811eabf0e8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FANAM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e90618f6dd3811eaa9538cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FAVOR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e90618f7dd3811eac30a8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FGBDT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e90618f8dd3811eabfe18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FASEX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e90618f9dd3811ea931c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZZPERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e90618fadd3811ea8eae8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZZRELATY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e906310add3811eaaf828cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e906310bdd3811ea86c28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e906310cdd3811ea8cb08cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_ZRFCHR049_RES">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">f1060235dd3811eab1070000004d469e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0002">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">7e155d58dc4c11ea91d48cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7e155d53dc4c11eac1bf8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="NACHN" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7e155d54dc4c11eab2de8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VORNA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7e155d55dc4c11eac4668cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7e155d56dc4c11eaa16c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">7e155d57dc4c11eac18d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0185">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">ec2d4922dc4c11eaa93f8cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ec2d23d3dc4c11eabea98cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ICTYP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ec2d23d4dc4c11eaae598cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ICNUM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ec2d23d5dc4c11ea82b58cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ec2d23d7dc4c11ea96468cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ec2d4921dc4c11ea99748cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0105">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">3ebebd28dc4d11eaa14e8cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3ebea31bdc4d11ea902a8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USRTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3ebea31cdc4d11eaa8e88cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USRID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3ebebd25dc4d11eaac6c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3ebebd26dc4d11ea9c248cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3ebebd27dc4d11eac3858cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0529">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">df25be82dc4d11ea88098cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">df25be7ddc4d11ea98a38cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RACKY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">df25be7edc4d11eabd0a8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="PCODE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">df25be7fdc4d11eac9088cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">df25be80dc4d11eaccef8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">df25be81dc4d11eac01f8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA9905">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a7cdc4e11ea80b38cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a74dc4e11ea924e8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRXM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a75dc4e11eaa0938cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRGX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a76dc4e11eaa1e28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZJJLXRLXFS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a77dc4e11eab5da8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZAHTC" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a78dc4e11eacb268cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZHZLS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a79dc4e11eac5608cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a7adc4e11ea9aba8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3fe46a7bdc4e11ea98a48cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0006">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf793dc5c11eacc698cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf78bdc5c11ea9b808cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SUBTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf78cdc5c11eac8b88cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LAND1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf78ddc5c11eac2788cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="STATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf78edc5c11eab8dc8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ORT01" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf78fdc5c11eaa13d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LOCAT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf790dc5c11eaa1c28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf791dc5c11eace878cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee9bf792dc5c11ea90818cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0022">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">493af87adc5d11eaa9f08cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af871dc5d11ea8b7f8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SLAND" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af872dc5d11ea88368cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SLART" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af873dc5d11eab5768cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="INSTI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af874dc5d11eabc568cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="AUSBI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af875dc5d11eab8e88cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af876dc5d11eaa4ae8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af877dc5d11ea8ce18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af878dc5d11eaabb28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">493af879dc5d11eacd318cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0023">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">8de3561ddc5d11ea81d18cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35613dc5d11eaaf028cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ARBGB" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35614dc5d11eab2ec8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ANSVX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35615dc5d11eac0518cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="TAETE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35616dc5d11eaa2d28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35617dc5d11eaa3a98cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35618dc5d11eab0488cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZPROFF1" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de35619dc5d11eab7c78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZPROFF2" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de3561adc5d11eac3c78cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de3561bdc5d11ea80c98cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">8de3561cdc5d11eabcf28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0024">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">ee463a24dc5d11eaa1c78cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a1ddc5d11ea9ea18cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="QUALI" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a1edc5d11eaa4128cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BEGDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a1fdc5d11ea8cd98cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ENDDA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a20dc5d11eac23e8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZISSUE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a21dc5d11ea8d618cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a22dc5d11ea9bcc8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">ee463a23dc5d11eace728cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IOT_PA0021">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">f0fbf4d2dd3811eab4a88cdcd42648fe</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="PERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbbd49dd3811eabd4e8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SUBTY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbca87dd3811ea84838cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FANAM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbca88dd3811eac7a28cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FAVOR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbca89dd3811eaa34f8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FGBDT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbca8add3811eab3198cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FASEX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbca8bdd3811eaa4888cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZZPERNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbf4cedd3811ea816c8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ZZRELATY" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbf4cfdd3811ea94478cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNTYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbf4d0dd3811ea985d8cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETURNMSG" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f0fbf4d1dd3811eaa4368cdcd42648fe</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_ZRFCHR049_REQ">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_ZRFCHR049_REQ" name="MT_ZRFCHR049_REQ"/>
+  </wsdl:message>
+  <wsdl:message name="MT_ZRFCHR049_RES">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_ZRFCHR049_RES" name="MT_ZRFCHR049_RES"/>
+  </wsdl:message>
+  <wsdl:portType name="SI_O_ZRFCHR049">
+    <wsdl:documentation/>
+    <wsdl:operation name="SI_O_ZRFCHR049">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_SI_O_ZRFCHR049"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_ZRFCHR049_REQ"/>
+      <wsdl:output message="p1:MT_ZRFCHR049_RES"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_O_ZRFCHR049Binding" type="p1:SI_O_ZRFCHR049">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SI_O_ZRFCHR049">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI_O_ZRFCHR049Service">
+    <wsdl:port binding="p1:SI_O_ZRFCHR049Binding" name="HTTP_Port">
+      <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://epdev.want-want.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_REMEDY&amp;receiverParty=&amp;receiverService=&amp;interface=SI_O_ZRFCHR049&amp;interfaceNamespace=http%3A%2F%2Fpi.want-want.com%2FZRFCHR049"/>
+    </wsdl:port>
+    <wsdl:port binding="p1:SI_O_ZRFCHR049Binding" name="HTTPS_Port">
+      <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="https://epdev.want-want.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_REMEDY&amp;receiverParty=&amp;receiverService=&amp;interface=SI_O_ZRFCHR049&amp;interfaceNamespace=http%3A%2F%2Fpi.want-want.com%2FZRFCHR049"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
