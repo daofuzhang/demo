@@ -1,0 +1,14 @@
+server:
+  port: 8102
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+spring:
+  application:
+    name: demo-seata-pay
+  datasource:
+    url: jdbc:mysql://192.168.137.142:3306/seata?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: Welcome1
+    driver-class-name: com.mysql.cj.jdbc.Driver
