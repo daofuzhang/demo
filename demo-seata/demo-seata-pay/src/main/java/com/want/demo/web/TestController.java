@@ -18,7 +18,13 @@ public class TestController {
 	private PayMapper payMapper;
 	
 	@RequestMapping("/createpay")
-	public boolean createPay(@RequestParam("id") int id,@RequestParam("money") BigDecimal money) {
+	public boolean createPay(@RequestParam("id") int id,@RequestParam("money") BigDecimal money) throws Exception {
+		
+		BigDecimal totalMoney = payMapper.getMoneyById(id);
+		if(totalMoney.compareTo(new BigDecimal(0))<=0) {
+			throw new Exception();
+		}
+		
 		Account account =new Account();
 		account.setId(id);
 		account.setMoney(money);
