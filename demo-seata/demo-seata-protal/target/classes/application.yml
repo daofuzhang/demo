@@ -4,3 +4,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/
+spring:  application:    name: demo-seata-protal
+feign:  hystrix:    enabled: false
+  client:    config:      default:
+        connectTimeout: 10000
+        readTimeout: 600000

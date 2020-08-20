@@ -6,20 +6,13 @@ import java.util.List;
 
 public class PayDetail {
 
-	private int id;
+
 	private BigDecimal money;
 	private Date paydate;
 	private int orderid;
 	private int accountId;
 	private List<Goods> goods;
 	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public BigDecimal getMoney() {
 		return money;
 	}

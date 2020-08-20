@@ -1,11 +1,10 @@
 package com.want.demo.mapper;
 
-import java.util.List;
-
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+
 import com.zdf.demo.entity.Goods;
 
 
@@ -13,10 +12,10 @@ import com.zdf.demo.entity.Goods;
 public interface GoodsInvMapper {
 
 
-	@Update("update goods set num = #{num} where id = #{id}")
-	public boolean update(int id ,int num);
+	@Update("update goods set num = num - #{num} where id = #{id}")
+	public boolean update(@Param("id") int id ,@Param("num") int num);
 
-	@Select("select * form goods where id = #{goodsId}")
-	public Goods findByGoodsId(int goodsId);
+	@Select("select * from goods where id = #{goodsId}")
+	public Goods findByGoodsId(@Param("goodsId") int goodsId);
 	
 }

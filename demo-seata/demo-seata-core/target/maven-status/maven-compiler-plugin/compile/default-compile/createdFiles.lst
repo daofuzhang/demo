@@ -1,0 +1,4 @@
+com\zdf\demo\entity\Goods.class
+com\zdf\demo\entity\Account.class
+com\zdf\demo\entity\Order.class
+com\zdf\demo\entity\PayDetail.class

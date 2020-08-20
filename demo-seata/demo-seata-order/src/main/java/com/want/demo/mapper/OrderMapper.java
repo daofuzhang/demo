@@ -8,7 +8,7 @@ import com.zdf.demo.entity.Order;
 @Mapper
 public interface OrderMapper {
 
-	@Insert("insert into order values(#{id},#{goodsid})")
+	@Insert("insert into ordr values(#{id},#{goodsid})")
 	public boolean insert(Order order);
 	
 	
