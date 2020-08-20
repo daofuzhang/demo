@@ -5,3 +5,4 @@ spring:  application:    name: demo-seata-inv  datasource:    url: jdbc:mysq
     username: root
     password: Welcome1
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:    alibaba:      seata:        tx-service-group: test_tx_group

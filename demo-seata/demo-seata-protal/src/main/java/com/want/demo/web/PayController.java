@@ -16,6 +16,8 @@ import com.want.demo.service.PayService;
 import com.zdf.demo.entity.Goods;
 import com.zdf.demo.entity.PayDetail;
 
+import io.seata.spring.annotation.GlobalTransactional;
+
 @RestController
 public class PayController {
 
@@ -27,6 +29,7 @@ public class PayController {
 	private PayService payService;
 	
 	@RequestMapping("/test2/{id}")
+	@GlobalTransactional
 	public PayDetail pay2(@PathVariable("id") int id) {
 		int goodsId_apple = 1;
 		int goodsId_oragle = 2;
@@ -66,6 +69,7 @@ public class PayController {
 	
 	
 	@RequestMapping("/test")
+	@GlobalTransactional
 	public PayDetail pay() {
 		
 		int goodsId_apple = 1;

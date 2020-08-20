@@ -5,6 +5,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:9000/eureka/
 spring:  application:    name: demo-seata-protal
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: test_tx_group
 feign:  hystrix:    enabled: false
   client:    config:      default:
         connectTimeout: 10000
