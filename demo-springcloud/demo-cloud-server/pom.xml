@@ -7,4 +7,7 @@
   </parent>
   <artifactId>demo-cloud-server</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>demo-server-s1</module>
+  </modules>
 </project>

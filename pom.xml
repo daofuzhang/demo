@@ -13,5 +13,6 @@
   	<module>demo-sharding-jdbc</module>
   	<module>demo-springcloud</module>
   	<module>demo-seata</module>
+  	<module>demo-mybatisplus</module>
   </modules>
 </project>
